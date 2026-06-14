@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Convert Videos to Dots!</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <main class="app-container">
+  
+  <header class="header">
+    <h1>Dot Matrix</h1>
+    <p>Upload a video to restyle it into pixels.</p>
+  </header>
+
+  <div class="video-workspace">
+    <!-- Hidden input, custom styled button below triggers it -->
+    <input type="file" id="videoUpload" accept="video/*" style="display: none;">
+    
+    <div class="control-actions">
+      <button id="customUploadBtn" class="btn">Select Video</button>
+      <button id="playPauseBtn" class="btn" disabled>Play / Pause</button>
+    </div>
+
+    <div class="canvas-wrapper">
+      <video id="video" width="1" height="1" loop></video>
+      <canvas id="dotCanvas" width="640" height="360"></canvas>
+    </div>
+  </div>
+
+  <footer class="creator-footer">
+    <span class="brand">Made by Keminsty</span>
+    <div class="socials">
+      <a href="#" target="_blank">TikTok</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@keminsty" target="_blank">YouTube</a>
+    </div>
+  </footer>
+
+</main>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
